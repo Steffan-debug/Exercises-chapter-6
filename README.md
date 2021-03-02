@@ -41,3 +41,46 @@ int main(void) {
 
 Exercise 2
 
+#include <stdio.h> 
+  
+int main(void) { 
+
+    int i;
+    
+    printf("Enter a number: ");
+    
+    scanf("%d", &i);
+    
+    if (i >= 0 && i <=60){ 
+    
+       printf("F"); 
+       
+    }
+    
+    else if (i >= 61 && i <=70){ 
+    
+       printf("D"); 
+       
+    }
+    
+    else if (i >= 71 && i <=80){ 
+    
+       printf("C");    
+       
+    }
+    
+    else if (i >= 81 && i <=90){ 
+    
+       printf("C");    
+       
+    }
+    
+    else if (i >= 91 && i <=100){ 
+    
+       printf("A");    
+       
+    }
+    
+    return 0;
+    
+} 
