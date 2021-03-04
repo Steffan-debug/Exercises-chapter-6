@@ -168,3 +168,40 @@ int main(void) {
   }    
   return 0;
 }
+
+Exercise 4
+
+#include<stdio.h>
+
+#include<math.h>
+
+int main(void){
+
+  float money1;
+  
+  int leftquarters, leftdimes, leftnickels, quarters, dimes, nickels;
+
+  printf("Introduce an amount of money: ");
+  
+  scanf("%f", &money1);
+
+  int indmoney = money1 * 100;
+  
+  quarters = indmoney / 25;
+  
+  leftquarters = indmoney % 25;
+  
+  dimes = leftquarters / 10;
+  
+  leftdimes = leftquarters % 10;
+  
+  nickels = leftdimes / 5;
+  
+  leftnickels = leftdimes % 5;
+  
+  printf("In %f$ there are %d quarters, %d dimes, %d nickels and %d pennies", money1, quarters, dimes, nickels, leftnickels);
+
+  return 0;
+}
+
+Exercise 5
