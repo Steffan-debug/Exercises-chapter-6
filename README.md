@@ -234,4 +234,46 @@ int main(void){
     }
     
   return 0;
+  
+}
+
+Exercise 6 
+
+#include<stdio.h>
+
+#include<math.h>
+
+int main(void){
+
+  float salary, nhours, hours, total, subtotal;
+
+  printf("Introduce your salary per hour:");
+
+  scanf("%f",&salary);
+
+  printf("Introduce the hours you've worked this week:");
+
+  scanf("%f",&hours);
+
+  float mult = 1.5;
+
+  
+	if (hours <= 40) {
+
+		total = hours * salary;
+
+	}
+	else {
+
+		nhours = hours - 40;
+
+		total = 40 * salary;
+
+		total += nhours * (salary + (salary/2));
+
+	}
+
+  printf("Your weekly pay is: $%f\n", total);
+
+  return 0;
 }
